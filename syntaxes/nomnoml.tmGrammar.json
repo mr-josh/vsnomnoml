@@ -3,15 +3,27 @@
     "patterns": [{"include": "#expression"}],
     "repository": {
         "expression": {
-            "patterns": [{"include": "#class"}, {"include": "#meta"}]
+            "patterns": [{"include": "#class"}, {"include": "#links"}, {"include": "#meta"}, {"include": "#properties"}]
         },
         "class": {
-            "match": "(?<=\\[(<[a-zA-Z]+>)?)[a-zA-Z ()]+(?=[\\||\\]])",
+            "match": "(?<=\\[(<[a-zA-Z]+>)?)( )?(?<!_)[a-zA-Z]([a-zA-Z ()-_]+?)?(?=[^a-zA-Z\\s])",
             "name": "entity.name.type"
+        },
+        "links": {
+            "match": "(?<=\\](.*)?)<?[:/-]{1,4}?>?(?=(.*)?\\[)",
+            "name": "keyword.control"
+        },
+        "link-descriptor": {
+            "match": "",
+            "name": "string"
         },
         "meta": {
             "match": "(?<=\\[)<[a-zA-Z]+>",
-            "name": "keyword.letter"
+            "name": "storage.type"
+        },
+        "properties": {
+            "match": "^#[a-zA-z]+",
+            "name": "support.type.property-name"
         }
     }
 }

@@ -43,7 +43,7 @@ export class NomnomlViewer {
                 </head>
                 <body>
                     <h1> Nomnoml </h1>
-                    <div style="transform: scale(1)">
+                    <div>
                         ${svg}
                     </div>
                 </body>

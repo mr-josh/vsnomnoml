@@ -17,6 +17,10 @@ Nothing yet...
 
 ## Release Notes
 
+### 0.1.1
+
+Updated and added some syntax highlighting
+
 ### 0.1.0
 
 Added some basic snippets and fixed typos/incorrect documentation.
