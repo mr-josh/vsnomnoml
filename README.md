@@ -4,7 +4,7 @@ A visualizer in VSCode for the sassy UML diagram renderer.
 
 ## Features
 
-Render .nomnoml files right in vscode! Press `Ctrl/Cmd`+`Shift`+`P` and type in `Nomnoml Render`
+Render .nomnoml files right in vscode! Press `Ctrl/Cmd`+`Shift`+`P` and type in `Render Nomnoml`
 
 ## Extension Settings
 
@@ -15,8 +15,6 @@ Nothing yet...
 Nothing yet...
 
 ## Release Notes
-
-Users appreciate release notes as you update your extension.
 
 ### 0.0.1
 
