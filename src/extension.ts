@@ -9,6 +9,8 @@ export function activate(context: vscode.ExtensionContext) {
 	let nomnomlRender = vscode.commands.registerTextEditorCommand('nomnoml.render', (te) => {
 		if (vscode.window.activeTextEditor) {
 			new NomnomlViewer(vscode.window.activeTextEditor.document);
+		} else {
+			vscode.window.showErrorMessage("No file open!");
 		}
 	});
 
