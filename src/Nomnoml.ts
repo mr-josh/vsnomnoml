@@ -28,7 +28,13 @@ export class NomnomlViewer {
                 return;
             }
 
-            let svg = nomnoml.renderSvg(this._nml);
+            let svg;
+            if (!this._nml.includes('#background')) {
+                svg = nomnoml.renderSvg(this._nml.concat('\n\n#background: lightgrey'));
+            } else {
+                svg = nomnoml.renderSvg(this._nml);
+            }
+
 
             panel.webview.html = `
             <!DOCTYPE html>
@@ -37,7 +43,9 @@ export class NomnomlViewer {
                 </head>
                 <body>
                     <h1> Nomnoml </h1>
-                    ${svg}
+                    <div style="transform: scale(1)">
+                        ${svg}
+                    </div>
                 </body>
             </html>
             `;

@@ -10,7 +10,7 @@
 		"email": "joshua@sparklapse.com"
 	},
 	"description": "A visualizer in VSCode for the sassy UML diagram renderer",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"engines": {
 		"vscode": "^1.49.0"
 	},
@@ -36,6 +36,13 @@
 					".nomnoml"
 				],
 				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "nomnoml",
+				"scopeName": "scope.nomnoml",
+				"path": "./syntaxes/nomnoml.tmGrammar.json"
 			}
 		],
 		"commands": [

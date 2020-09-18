@@ -1,0 +1,17 @@
+{
+    "scopeName": "scope.nomnoml",
+    "patterns": [{"include": "#expression"}],
+    "repository": {
+        "expression": {
+            "patterns": [{"include": "#class"}, {"include": "#meta"}]
+        },
+        "class": {
+            "match": "(?<=\\[(<[a-zA-Z]+>)?)[a-zA-Z ()]+(?=[\\||\\]])",
+            "name": "entity.name.type"
+        },
+        "meta": {
+            "match": "(?<=\\[)<[a-zA-Z]+>",
+            "name": "keyword.letter"
+        }
+    }
+}
