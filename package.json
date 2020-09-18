@@ -1,6 +1,14 @@
 {
 	"name": "vsnomnoml",
 	"displayName": "VSNomnoml",
+	"publisher": "mr-josh",
+	"repository": {
+		"url": "https://github.com/mr-josh/vsnomnoml"
+	},
+	"author": {
+		"name": "mr-josh",
+		"email": "joshua@sparklapse.com"
+	},
 	"description": "A visualizer in VSCode for the sassy UML diagram renderer",
 	"version": "0.0.1",
 	"engines": {
